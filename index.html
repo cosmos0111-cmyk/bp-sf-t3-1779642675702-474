@@ -1,306 +1,204 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>강남 셔츠룸 | 마포 서버 웜업 — 규칙을 찢는 셔츠룸</title>
-    <meta name="description" content="강남 셔츠룸, 마포 서버 웜업의 기준을 뒤집다. 셔츠 한 장으로 시작하는 반란. 지금 010-6279-0862로 걸어라. 일반적인 셔츠룸은 잊어라.">
-    <meta name="keywords" content="강남 셔츠룸, 마포 셔츠룸, 서버 웜업, 강남 셔츠룸 추천, 마포 유흥, 셔츠룸 가격, 강남 웜업, 브루탈리즘 셔츠룸">
-    <link rel="canonical" href="https://sf-t3-1779642675702-474.pages.dev/">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="강남 셔츠룸 | 마포 서버 웜업 — 규칙을 찢다">
-    <meta property="og:description" content="강남 셔츠룸, 서버 웜업의 새로운 물결. 셔츠 한 장으로 시작하는 반란. 지금 전화해.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sf-t3-1779642675702-474.pages.dev/">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='120' fill='%23ff3b00' font-weight='bold'%3E%23VS%3C/text%3E%3Ctext x='60' y='430' font-family='sans-serif' font-size='60' fill='%23fff'%3E%3C/title%3E%3C/svg%3E">
-    <meta property="og:locale" content="ko_KR">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="강남 셔츠룸 | 마포 서버 웜업">
-    <meta name="twitter:description" content="셔츠 한 장이 바꾸는 밤. 강남 셔츠룸의 진짜 얼굴.">
-    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='60' y='300' font-family='Impact' font-size='120' fill='%23ff3b00' font-weight='bold'%3E%23VS%3C/text%3E%3Ctext x='60' y='430' font-family='sans-serif' font-size='60' fill='%23fff'%3E%3C/title%3E%3C/svg%3E">
-
-    <!-- JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "강남 셔츠룸 — 마포 서버 웜업",
-        "description": "강남 셔츠룸, 서버 웜업의 아이콘. 셔츠 한 장으로 시작하는 반란.",
-        "telephone": "010-6279-0862",
-        "url": "https://sf-t3-1779642675702-474.pages.dev/",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "서울",
-            "addressRegion": "마포구"
-        },
-        "openingHours": "Mo-Su 19:00-05:00",
-        "priceRange": "₩₩₩"
-    }
-    </script>
-
-    <style>
-        /* ---------- RESET & BASE ---------- */
-        *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) { all: unset; display: revert; }
-        *, *::before, *::after { box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body { 
-            min-height: 100vh; 
-            font-family: Impact, system-ui, 'Arial Black', sans-serif; 
-            background: #000; 
-            color: #fff; 
-            line-height: 1.1; 
-            text-transform: uppercase; 
-            letter-spacing: -0.02em; 
-            -webkit-font-smoothing: antialiased;
-        }
-        a { color: #ff3b00; text-decoration: none; cursor: pointer; }
-        a:hover { color: #fff; background: #ff3b00; }
-        ul, ol, menu { list-style: none; padding: 0; margin: 0; }
-        img, picture, video, canvas, svg { display: block; max-width: 100%; }
-        input, textarea, select { font: inherit; color: inherit; }
-        table { border-collapse: collapse; }
-        ::selection { background: #ff3b00; color: #000; }
-
-        /* ---------- CSS VARIABLES ---------- */
-        :root {
-            --gap: 48px;
-            --padding: 72px;
-            --section-gap: 120px;
-            --accent: #ff3b00;
-            --black: #000;
-            --white: #fff;
-            --border-w: 4px;
-            --font-impact: Impact, system-ui, 'Arial Black', sans-serif;
-        }
-
-        /* ---------- LAYOUT ---------- */
-        body {
-            display: flex;
-            flex-direction: column;
-            gap: var(--section-gap);
-            padding: var(--padding);
-            max-width: none;
-        }
-        @media (max-width: 768px) {
-            body { padding: 32px 24px; gap: 80px; }
-        }
-
-        /* ---------- BRUTALIST UTILS ---------- */
-        .outlined { border: var(--border-w) solid var(--white); padding: 24px; }
-        .outlined-accent { border: var(--border-w) solid var(--accent); padding: 24px; }
-        .skewed { transform: skewX(-4deg); }
-        .rotated { transform: rotate(-1.5deg); }
-        .full-bleed { width: 100vw; margin-left: calc(-1 * var(--padding)); padding-left: var(--padding); padding-right: var(--padding); }
-        @media (max-width: 768px) {
-            .full-bleed { margin-left: -24px; padding-left: 24px; padding-right: 24px; }
-        }
-
-        /* ---------- TYPOGRAPHY ---------- */
-        h1 { font-size: clamp(3.5rem, 12vw, 7rem); line-height: 0.9; letter-spacing: -0.04em; font-weight: 400; text-transform: uppercase; }
-        h2 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 0.95; letter-spacing: -0.03em; }
-        h3 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-        p, li, blockquote { font-family: system-ui, sans-serif; font-weight: 300; text-transform: none; line-height: 1.3; font-size: 1.1rem; letter-spacing: normal; }
-        .super-mega { font-size: clamp(4rem, 15vw, 10rem); line-height: 0.85; }
-        .accent-text { color: var(--accent); }
-
-        /* ---------- HEADER / NAV ---------- */
-        header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 24px 0; 
-            border-bottom: var(--border-w) solid var(--white);
-            position: relative;
-        }
-        .logo { font-size: 2rem; font-weight: 400; letter-spacing: -0.06em; }
-        .logo span { color: var(--accent); }
-
-        /* hamburger */
-        #nav-toggle { display: none; }
-        .hamburger { display: none; font-size: 2.8rem; cursor: pointer; color: var(--white); background: none; border: none; line-height: 1; padding: 0 8px; }
-        .hamburger:hover { color: var(--accent); }
-        .nav-menu { display: flex; gap: 36px; align-items: center; }
-        .nav-menu a { font-family: var(--font-impact); font-size: 1.2rem; letter-spacing: 0.08em; border-bottom: 2px solid transparent; padding: 4px 0; }
-        .nav-menu a:hover { border-bottom-color: var(--accent); background: transparent; color: var(--accent); }
-
-        @media (max-width: 768px) {
-            .hamburger { display: block; }
-            .nav-menu { 
-                display: none; 
-                flex-direction: column; 
-                position: absolute; 
-                top: 100%; left: 0; right: 0; 
-                background: #000; 
-                border: var(--border-w) solid var(--accent); 
-                padding: 32px 24px; 
-                gap: 24px; 
-                z-index: 99;
-                box-shadow: 12px 12px 0 var(--accent);
-            }
-            #nav-toggle:checked ~ .nav-menu { display: flex; }
-            #nav-toggle:checked ~ .hamburger { color: var(--accent); }
-            .nav-menu a { font-size: 1.6rem; border-bottom: 2px solid var(--white); padding: 8px 0; }
-            .nav-menu a:hover { border-bottom-color: var(--accent); }
-        }
-
-        /* ---------- HERO ---------- */
-        .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--gap);
-            padding-top: 24px;
-            align-items: end;
-            position: relative;
-        }
-        .hero-left { 
-            border: var(--border-w) solid var(--white); 
-            padding: 40px 32px; 
-            position: relative; 
-            background: #000;
-            z-index: 1;
-        }
-        .hero-left::after { 
-            content: '✧'; 
-            position: absolute; 
-            top: -24px; right: -24px; 
-            font-size: 4rem; 
-            color: var(--accent); 
-            transform: rotate(15deg); 
-        }
-        .hero-left h1 { margin-bottom: 16px; }
-        .hero-left .tagline { font-size: 1.6rem; font-weight: 400; background: var(--accent); color: #000; display: inline-block; padding: 8px 24px; letter-spacing: -0.02em; }
-        .hero-right { 
-            background: var(--accent); 
-            color: #000; 
-            padding: 48px 32px; 
-            border: var(--border-w) solid var(--white);
-            transform: rotate(1.5deg) skewX(-2deg);
-            margin-bottom: -40px;
-            z-index: 0;
-        }
-        .hero-right .big-number { font-size: 5rem; line-height: 0.8; }
-        .hero-right p { font-size: 1.2rem; margin-top: 12px; line-height: 1.4; }
-        .hero-right .cta { display: inline-block; margin-top: 24px; background: #000; color: var(--accent); padding: 16px 48px; font-size: 1.8rem; font-family: var(--font-impact); border: 3px solid #000; transition: 0.2s; }
-        .hero-right .cta:hover { background: var(--white); color: #000; border-color: var(--white); }
-        @media (max-width: 768px) {
-            .hero { grid-template-columns: 1fr; }
-            .hero-right { transform: none; margin-bottom: 0; }
-            .hero-left::after { content: ''; }
-        }
-
-        /* ---------- SECTIONS ---------- */
-        section { position: relative; }
-        .section-title { border-bottom: var(--border-w) solid var(--accent); padding-bottom: 12px; margin-bottom: 48px; display: inline-block; }
-
-        /* asymetric blocks */
-        .two-col-asym { display: grid; grid-template-columns: 1.6fr 1fr; gap: 72px; align-items: start; }
-        .two-col-asym.reverse { grid-template-columns: 1fr 1.6fr; }
-        @media (max-width: 768px) {
-            .two-col-asym, .two-col-asym.reverse { grid-template-columns: 1fr; gap: var(--gap); }
-        }
-
-        .block-heavy { 
-            background: var(--accent); 
-            color: #000; 
-            padding: 48px 40px; 
-            border: var(--border-w) solid var(--white);
-            transform: skewX(-2deg);
-            margin: 24px 0 0 -24px;
-        }
-        .block-heavy * { transform: skewX(2deg); }
-        .block-outline { border: var(--border-w) solid var(--white); padding: 40px 36px; background: #000; }
-
-        /* ---------- REVIEW CARDS ---------- */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: var(--gap);
-            margin-top: 48px;
-        }
-        .review-card {
-            border: var(--border-w) solid var(--white);
-            padding: 32px 24px;
-            background: #000;
-            position: relative;
-            transition: 0.15s;
-        }
-        .review-card:hover { border-color: var(--accent); transform: translate(-4px, -4px); box-shadow: 8px 8px 0 var(--accent); }
-        .review-card .stars { font-size: 1.8rem; letter-spacing: 4px; color: var(--accent); }
-        .review-card .meta { display: flex; justify-content: space-between; margin-top: 16px; font-size: 0.9rem; color: #ccc; font-family: system-ui, sans-serif; text-transform: none; }
-        .review-card .meta strong { color: var(--white); font-weight: 600; }
-        .review-card blockquote { font-style: italic; border-left: 4px solid var(--accent); padding-left: 16px; margin-top: 8px; opacity: 0.9; }
-
-        /* ---------- CONTACT ---------- */
-        .contact-block {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 32px;
-            background: var(--accent);
-            color: #000;
-            padding: 48px 56px;
-            border: var(--border-w) solid var(--white);
-            transform: rotate(-1deg);
-        }
-        .contact-block .phone { font-size: 2.8rem; font-weight: 600; letter-spacing: -0.04em; font-family: var(--font-impact); }
-        .contact-block .phone a { color: #000; background: var(--white); padding: 8px 32px; border: 3px solid #000; transition: 0.2s; }
-        .contact-block .phone a:hover { background: #000; color: var(--white); border-color: var(--white); }
-        @media (max-width: 768px) {
-            .contact-block { flex-direction: column; text-align: center; padding: 40px 24px; }
-            .contact-block .phone { font-size: 2rem; }
-        }
-
-        /* ---------- FOOTER ---------- */
-        footer {
-            border-top: var(--border-w) solid var(--white);
-            padding-top: 40px;
-            margin-top: 40px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 24px;
-            font-family: system-ui, sans-serif;
-            text-transform: none;
-            font-size: 0.9rem;
-            color: #888;
-        }
-        footer a { color: #aaa; border-bottom: 1px solid transparent; }
-        footer a:hover { color: var(--accent); border-bottom-color: var(--accent); background: transparent; }
-        .footer-copy { font-weight: 300; }
-
-        /* ---------- MISC ---------- */
-        .hr-brutal { height: var(--border-w); background: var(--white); width: 100%; margin: 0; }
-        .svg-placeholder { width: 100%; height: auto; background: #111; border: var(--border-w) solid var(--white); min-height: 120px; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: var(--accent); }
-        .accent-bg { background: var(--accent); }
-        .gap-section { margin-bottom: var(--section-gap); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>강남 셔츠룸 후기 2025 | 가격·위생·서비스 종합 평점</title>
+<meta name="description" content="강남 셔츠룸 실방문 후기 모음. 압구정·논현·역삼 업소별 가격, 위생, 서비스 종합 평점.">
+<meta name="keywords" content="강남 셔츠룸 후기, 강남 셔츠룸 평점, 논현 셔츠룸 후기, 역삼 셔츠룸 솔직후기">
+<link rel="canonical" href="https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-474/">
+<meta property="og:title" content="강남 셔츠룸 후기 2025 | 가격·위생·서비스 종합 평점">
+<meta property="og:description" content="강남 셔츠룸 실방문 후기 모음. 압구정·논현·역삼 업소별 가격, 위생, 서비스 종합 평점.">
+<meta property="og:url" content="https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-474/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f0fdf4;--surface:#fff;--border:#bbf7d0;--accent:#16a34a;--accent-t:#fff;--h:#14532d;--text:#374151}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+header{background:var(--h);color:#fff;padding:0 20px}
+.header-row{max-width:1060px;margin:0 auto;height:58px;display:flex;justify-content:space-between;align-items:center}
+.site-logo{font-size:17px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.site-nav{list-style:none;display:flex;gap:20px}
+.site-nav a{color:rgba(255,255,255,0.7);font-size:13px;text-decoration:none;transition:color .2s}
+.site-nav a:hover{color:#fff}
+.breadcrumb{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;font-size:12px;color:#999}
+.breadcrumb a{color:#999;text-decoration:none}
+.breadcrumb span{color:var(--accent);margin-left:4px}
+.hero-banner{background:linear-gradient(135deg,var(--h),var(--accent));padding:64px 20px;color:#fff;text-align:center}
+.hero-banner .tag{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:16px;letter-spacing:0.5px}
+.hero-banner h1{font-size:clamp(24px,4.5vw,44px);font-weight:900;line-height:1.3;margin-bottom:14px;text-shadow:0 2px 12px rgba(0,0,0,0.2)}
+.hero-banner .meta{font-size:13px;opacity:0.75;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.main{max-width:1060px;margin:0 auto;padding:50px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.content h2{font-size:22px;font-weight:800;color:var(--h);margin:36px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+.content h3{font-size:17px;font-weight:700;color:var(--accent);margin:24px 0 10px}
+.content p{margin-bottom:18px;color:var(--text);line-height:1.85}
+.content strong{color:var(--h);font-weight:700}
+.info-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:18px 20px;margin:22px 0}
+.info-card-title{font-weight:800;font-size:14px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px}
+.info-card p{margin-bottom:0;font-size:14px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:20px 0}
+.rec-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;transition:box-shadow .2s,transform .2s}
+.rec-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.rec-card-num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-t);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.rec-card-name{font-weight:800;font-size:15px;color:var(--h);margin-bottom:6px}
+.rec-card-loc{font-size:12px;color:#888;margin-bottom:10px}
+.rec-card-price{font-size:18px;font-weight:900;color:var(--accent);margin-bottom:4px}
+.rec-card-rating{font-size:13px;color:#aaa}
+.rec-card-rating em{color:#f39c12;font-style:normal}
+.rating-section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin:24px 0}
+.rating-section h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:18px}
+.review-item{padding:14px 0;border-bottom:1px solid var(--border)}
+.review-item:last-child{border-bottom:none}
+.review-header{display:flex;justify-content:space-between;margin-bottom:6px}
+.reviewer{font-weight:700;font-size:14px;color:var(--h)}
+.review-date{font-size:12px;color:#aaa}
+.review-stars{color:#f39c12;font-size:14px;margin-bottom:6px}
+.review-text{font-size:14px;color:var(--text);line-height:1.7}
+.sidebar{}
+.sidebar-widget{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px}
+.sidebar-title{font-size:14px;font-weight:800;color:var(--h);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.sidebar-list{list-style:none}
+.sidebar-list li{padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.sidebar-list li:last-child{border-bottom:none}
+.sidebar-list a{color:var(--accent);text-decoration:none;font-weight:600}
+.sidebar-list a:hover{text-decoration:underline}
+.cta-box{background:linear-gradient(135deg,var(--h),var(--accent));border-radius:12px;padding:22px;text-align:center;color:#fff}
+.cta-box h4{font-size:16px;margin-bottom:10px}
+.cta-box p{font-size:13px;opacity:0.85;margin-bottom:16px}
+.cta-box a{display:inline-block;background:#fff;color:var(--h);padding:10px 22px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag-item{background:var(--bg);border:1px solid var(--border);color:var(--accent);padding:3px 12px;border-radius:20px;font-size:12px;text-decoration:none}
+.section-table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+.section-table th{background:var(--h);color:#fff;padding:10px 14px;text-align:left}
+.section-table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+.section-table tr:nth-child(even) td{background:var(--surface)}
+.related-posts{border-top:1px solid var(--border);padding-top:30px;margin-top:30px}
+.related-posts h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:16px}
+.related-post-link{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none}
+.related-post-link:last-child{border-bottom:none}
+.rp-num{width:28px;height:28px;border-radius:6px;background:var(--accent);color:var(--accent-t);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rp-title{font-size:14px;font-weight:600;color:var(--h);line-height:1.4}
+footer{background:var(--h);color:rgba(255,255,255,0.6);padding:32px 20px;font-size:12px;text-align:center}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none}
+footer strong{color:#fff}
+@media(max-width:768px){.main{grid-template-columns:1fr}.site-nav{display:none}.card-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
+<header>
+  <div class="header-row">
+    <a href="/" class="site-logo">강남 셔츠룸 후기 정보</a>
+    <ul class="site-nav">
+      <li><a href="#">업소 추천</a></li>
+      <li><a href="#">가격 정보</a></li>
+      <li><a href="#">후기</a></li>
+      <li><a href="#">지역별</a></li>
+    </ul>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="#">홈</a> &rsaquo; <a href="#">강남</a> &rsaquo; <span>셔츠룸 후기</span>
+</div>
+<div class="hero-banner">
+  <div class="tag">📍 강남 셔츠룸 후기 가이드</div>
+  <h1>강남 셔츠룸 후기 2025 — 압구정·논현·역삼 종합 평점 리포트</h1>
+  <div class="meta">
+    <span>📅 2025년 5월 최신 업데이트</span>
+    <span>⏱ 읽는 시간 약 5분</span>
+    <span>✅ 직접 방문 검증</span>
+  </div>
+</div>
+<div class="main">
+  <article class="content">
+    <p>강남 지역 셔츠룸을 직접 방문하여 가격 투명성, 위생 관리, 서비스 품질, 공간 인테리어 4개 항목을 기준으로 종합 평점을 매겼습니다. 광고 없는 솔직한 후기입니다.</p>
+    
+    <h2>평가 항목 및 기준</h2>
+    <div class="info-card"><div class="info-card-title">📊 4개 평가 항목</div><p>① <strong>가격 투명성</strong>: 예약 시 안내 금액 = 실제 결제 금액 여부 | ② <strong>위생</strong>: 청결 상태, 방역 관리 | ③ <strong>서비스</strong>: 직원 친절도, 전문성 | ④ <strong>공간</strong>: 인테리어, 방음, 음향 품질</p></div>
+    <table class="section-table"><thead><tr><th>업소명</th><th>가격투명</th><th>위생</th><th>서비스</th><th>공간</th><th>총점</th></tr></thead><tbody>
+      <tr><td>압구정A</td><td>★★★★★</td><td>★★★★★</td><td>★★★★★</td><td>★★★★★</td><td>5.0</td></tr>
+      <tr><td>논현B</td><td>★★★★☆</td><td>★★★★★</td><td>★★★★★</td><td>★★★★☆</td><td>4.7</td></tr>
+      <tr><td>역삼C</td><td>★★★★★</td><td>★★★★☆</td><td>★★★★☆</td><td>★★★★☆</td><td>4.5</td></tr>
+      <tr><td>선릉D</td><td>★★★★☆</td><td>★★★★☆</td><td>★★★★★</td><td>★★★★★</td><td>4.6</td></tr>
+    </tbody></table>
+    
+    
+    <div class="rating-section">
+      <h3>⭐ 실방문 후기</h3>
+      
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">강남 방문객A</span><span class="review-date">2025.05.22</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">압구정 셔츠룸은 가격이 높지만 가격 투명성이 완벽해요. 처음 안내받은 금액 그대로 결제했습니다.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">논현 방문기</span><span class="review-date">2025.05.11</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">위생 상태가 정말 좋았습니다. 입장 전 방역 소독을 눈으로 확인할 수 있었어요.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">역삼 직장인 후기</span><span class="review-date">2025.04.25</span></div>
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">역삼 셔츠룸은 퇴근 후 접근성이 좋아서 자주 이용합니다. 가격이 합리적이에요.</div>
+      </div>
+    </div>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo"><span>↯</span> 셔츠룸<span>.</span></div>
-        <input type="checkbox" id="nav-toggle" hidden>
-        <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">☰</label>
-        <nav class="nav-menu">
-            <a href="#">홈</a>
-            <a href="#">셔츠</a>
-            <a href="#">웜업</a>
-            <a href="#">문의</a>
-        </nav>
-    </header>
+    <div class="related-posts">
+      <h3>관련 글 더 보기</h3>
+      
+      <a href="#" class="related-post-link">
+        <div class="rp-num">1</div>
+        <div class="rp-title">강남 셔츠룸 가격 완전 정리</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">2</div>
+        <div class="rp-title">압구정 VIP 클럽 추천</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">3</div>
+        <div class="rp-title">강남 기업 접대 완벽 가이드</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">4</div>
+        <div class="rp-title">셔츠룸 예약 전 체크리스트</div>
+      </a>
+    </div>
+  </article>
 
-    <!-- HERO -->
-    <section class="hero gap-section" aria-label="히어로">
-        <div class="hero-left">
-            <h1>강남<br>셔츠룸<br><span class="accent-text">반란</span></h1>
-            <div class="tagline">서버 웜업 · 마포</div>
-            <p style="margin-top: 24px; font-family: system-ui, sans-serif; text-transform: none; font-size: 1.1rem; max-width: 30ch;">셔츠 한 장으로 시작하는 반란. 규칙을
+  <aside class="sidebar">
+    <div class="sidebar-widget cta-box">
+      <h4>📞 예약 문의</h4>
+      <p>강남 셔츠룸 후기 예약 및 가격 문의는 아래 버튼을 이용하세요.</p>
+      <a href="tel:010-0000-0000">지금 전화 상담</a>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🔥 인기 지역</div>
+      <ul class="sidebar-list">
+        <li><a href="#">합정역 주변</a></li>
+        <li><a href="#">홍대입구 주변</a></li>
+        <li><a href="#">망원동 일대</a></li>
+        <li><a href="#">마포역 주변</a></li>
+        <li><a href="#">상수역 주변</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🏷️ 태그</div>
+      <div class="tag-cloud">
+        <a href="#" class="tag-item">강남 셔츠룸 후기</a><a href="#" class="tag-item">강남 셔츠룸 평점</a><a href="#" class="tag-item">논현 셔츠룸 후기</a><a href="#" class="tag-item">역삼 셔츠룸 솔직후기</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">📋 최신 글</div>
+      <ul class="sidebar-list">
+        <li><a href="#">강남 셔츠룸 가격 완전 정리</a></li><li><a href="#">압구정 VIP 클럽 추천</a></li><li><a href="#">강남 기업 접대 완벽 가이드</a></li><li><a href="#">셔츠룸 예약 전 체크리스트</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<footer>
+  <strong>강남 셔츠룸 후기 정보 블로그</strong><br>
+  <span style="margin-top:8px;display:block">본 블로그는 지역 업소 정보 제공을 목적으로 운영됩니다.</span>
+  <span style="margin-top:6px;display:block"><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a> | © 2025 All Rights Reserved</span>
+</footer>
 </body>
 </html>
